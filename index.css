@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor-ppal{
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 55%;
+    height: 350px;
+    margin-top: 65px;
+
+}
+
+.carta-frase {
+    text-align: center;
+    width: 75%;
+    position: relative;
+    top: -30px;
+}
+
+
+.compartir-nuevaFrase{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 50px;
+}
+
+.compartir {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+    left: -130px;
+    top: 60px;
+}
+
+.compartir #twitter ,
+#facebook {
+    border-radius: 5px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+a:link, a:visited {
+    text-decoration: none;
+}
+
+#twitter,
+#facebook{
+    color: #fff;
+    cursor: pointer;
+}
+
+.frase {
+    font-size: 30px;
+}
+
+.autor {
+    font-size: 20px;
+    position: relative;
+    left: 170px;
+    top: 40px;
+}
+
+#btnFrase {
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 10px;
+    cursor: pointer;
+    position: relative;
+    left: 130px;
+    top: 60px;
+}
+
+@media (min-width: 680px) and (max-width: 1110px){
+    .contenedor-ppal{
+        width: 80vw;
+    }
+}
+
+@media (min-width: 560px) and (max-width: 679px){
+    .contenedor-ppal{
+        width: 85vw;
+    }
+
+    .autor{
+        left: 140px;
+    }
+
+    .compartir{
+        left: -100px;
+    }
+
+    #btnFrase{
+        left: 100px;
+    }
+}
+
+@media (min-width: 445px) and (max-width: 561px){
+    .contenedor-ppal{
+        width: 95%;
+        
+    }
+    .autor{
+        left: 110px;
+    }
+
+    .compartir{
+        left: -70px;
+    }
+
+    #btnFrase{
+        left: 70px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 444px){
+    .contenedor-ppal{
+        margin: 0;
+        width: 100%;
+        height: 100vh;
+    }
+    .autor{
+        left: 90px;
+    }
+
+    .compartir{
+        left: -40px;
+    }
+
+    #btnFrase{
+        left: 40px;
+    }
+}
